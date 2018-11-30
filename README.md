@@ -3,6 +3,10 @@ csv2xls
 
 > I couldn't find a way to import CSV file in Excel properly when CSV file value contains line break 😱
 
+## Installation
+
+    npm install csv2xls --global
+
 ## Usage
 
-    node --max-old-space-size=4096 index.js mycsvfile.csv
+    csv2xls mycsvfile.csv
