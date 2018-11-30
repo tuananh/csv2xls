@@ -7,7 +7,7 @@ const xlsx = require('node-xlsx')
 const results = []
 async function makeExcelHappy() {
     const fileName = process.argv[2]
-    if (fileName && fileName.indexOf('.csv' > -1 )) {
+    if (fileName && fileName.indexOf('.csv') > -1 ) {
         fs.createReadStream(fileName)
             .pipe(csv())
             .on('data', (data) => {
@@ -27,7 +27,7 @@ async function makeExcelHappy() {
                 })
             })
     } else {
-        console.log('expect a csv file name as input')
+        console.log('expect a csv file name as input, got `'+fileName + '`')
     }
 }
 
